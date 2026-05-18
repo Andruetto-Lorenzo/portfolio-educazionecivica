@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -21,6 +21,12 @@ const config = {
 			base: '/portfolio-educazionecivica'
 		}
 	},
+	prerender: {
+    	handleHttpError: ({ path, message }) => {
+      		if (path === '/portfolio-educazionecivica/') return;
+		    throw new Error(message);
+    }
+  }
 };
 
 export default config;

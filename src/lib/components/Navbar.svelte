@@ -7,8 +7,8 @@
   let menuOpen = $state(false);
 
   const navLinks = [
-    { href: '{base}/', label: 'Home' },
-    { href: '{base}/educazione-civica', label: 'Ed. Civica' },
+    { href: `${base}/`, label: 'Home' },
+    { href: `${base}/educazione-civica`, label: 'Ed. Civica' },
   ];
 
   onMount(() => {
