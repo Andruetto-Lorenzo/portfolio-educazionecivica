@@ -7,11 +7,7 @@
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/chi-sono', label: 'Chi Sono' },
     { href: '/educazione-civica', label: 'Ed. Civica' },
-    { href: '/percorso', label: 'Percorso' },
-    { href: '/progetti', label: 'Progetti' },
-    { href: '/contatti', label: 'Contatti' },
   ];
 
   onMount(() => {
@@ -61,14 +57,6 @@
         </li>
       {/each}
     </ul>
-
-    <!-- CTA -->
-    <a href="/contatti" class="nav-cta">
-      <span>Contattami</span>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-        <path d="M7 17L17 7M17 7H7M17 7v10"/>
-      </svg>
-    </a>
 
     <!-- Hamburger -->
     <button

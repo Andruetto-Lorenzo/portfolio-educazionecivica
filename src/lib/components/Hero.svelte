@@ -97,11 +97,6 @@
   <div class="orb orb-3"></div>
 
   <div class="hero-content" class:visible>
-    <!-- Badge -->
-    <div class="hero-badge fade-in" style="animation-delay:0.1s">
-      <span class="badge-dot"></span>
-      <span>Studente Informatico · Anno Scolastico 2025/26</span>
-    </div>
 
     <!-- Name -->
     <h1 class="hero-title fade-in" style="animation-delay:0.2s">
@@ -140,7 +135,7 @@
     </div>
 
     <!-- Stats -->
-    <div class="hero-stats fade-in" style="animation-delay:0.85s">
+    <!-- <div class="hero-stats fade-in" style="animation-delay:0.85s">
       <div class="stat">
         <span class="stat-num">3</span>
         <span class="stat-label">Anni di percorso</span>
@@ -156,7 +151,7 @@
         <span class="stat-label">Passione per il codice</span>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Scroll hint -->
   <div class="scroll-hint" class:visible>
