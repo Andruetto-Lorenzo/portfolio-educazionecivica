@@ -1,13 +1,14 @@
 <script>
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
+  import { base } from '$app/paths';
 
   let scrolled = $state(false);
   let menuOpen = $state(false);
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/educazione-civica', label: 'Ed. Civica' },
+    { href: '{base}/', label: 'Home' },
+    { href: '{base}/educazione-civica', label: 'Ed. Civica' },
   ];
 
   onMount(() => {
@@ -33,7 +34,7 @@
 <nav class="navbar" class:scrolled class:menu-open={menuOpen}>
   <div class="nav-inner">
     <!-- Logo -->
-    <a href="/" class="logo" on:click={closeMenu}>
+    <a href={`${base}/`} class="logo" on:click={closeMenu}>
       <span class="logo-bracket">[</span>
       <span class="logo-text">PORTFOLIO</span>
       <span class="logo-bracket">]</span>

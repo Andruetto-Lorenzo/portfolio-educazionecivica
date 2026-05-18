@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   const socials = [
     {
       name: 'GitHub',
@@ -36,12 +37,8 @@
       <div class="footer-nav">
         <h4 class="footer-nav-title">Sezioni</h4>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/chi-sono">Chi Sono</a></li>
-          <li><a href="/educazione-civica">Ed. Civica</a></li>
-          <li><a href="/percorso">Percorso</a></li>
-          <li><a href="/progetti">Progetti</a></li>
-          <li><a href="/contatti">Contatti</a></li>
+          <li><a href={`${base}/`}>Home</a></li>
+          <li><a href={`${base}/educazione-civica`}>Ed. Civica</a></li>
         </ul>
       </div>
 

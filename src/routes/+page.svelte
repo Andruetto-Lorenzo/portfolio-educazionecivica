@@ -1,7 +1,7 @@
 <script>
   import Hero from '$lib/components/Hero.svelte';
   import ProjectCard from '$lib/components/ProjectCard.svelte';
-  import { base } from '$service-worker';
+  import { base } from '$app/paths';
   import { onMount } from 'svelte';
   import { featuredProjects } from './projects';
 
@@ -47,15 +47,6 @@
       </div>
     {/each}
   </div>
-
-  <div class="projects-cta">
-    <a href="/progetti" class="btn-outline">
-      Vedi tutti i progetti
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-        <path d="M5 12h14M12 5l7 7-7 7"/>
-      </svg>
-    </a>
-  </div>
 </section>
 
 <!-- ABOUT PREVIEW -->
@@ -75,8 +66,6 @@
         fondamentali come la cittadinanza digitale, la sostenibilità e i diritti nella società moderna.
       </p>
       <div class="about-ctas">
-        <a href="/chi-sono" class="btn-primary-sm">Scopri di più</a>
-        <a href="/percorso" class="btn-ghost-sm">Il mio percorso →</a>
       </div>
     </div>
 
@@ -104,27 +93,8 @@
     </div>
   </div>
 </section>
-
-<!-- ED. CIVICA PREVIEW 
-<section class="civica-section-wrap" data-section="civica">
-  <div class="section civica-section">
-    <div class="section-head" class:anim-in={sectionVisible['civica']}>
-      <span class="tag">// materia principale</span>
-      <h2 class="section-title">Educazione <span class="accent">Civica</span></h2>
-      <p class="section-subtitle">I grandi temi affrontati nel triennio</p>
-      <div class="glow-line"></div>
-    </div>
-
-    <div class="projects-grid" class:anim-in={sectionVisible['projects']}>
-    {#each featuredProjects as project, i}
-      <div class="card-wrapper" style="animation-delay: {i * 0.1}s">
-        <ProjectCard {...project} />
-      </div>
-    {/each}
-  </div> -->
-
     <div class="projects-cta">
-      <a href="/educazione-civica" class="btn-outline">
+      <a href={`${base}/educazione-civica`} class="btn-outline">
         Approfondisci Educazione Civica
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M5 12h14M12 5l7 7-7 7"/>
