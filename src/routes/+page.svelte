@@ -1,6 +1,7 @@
 <script>
   import Hero from '$lib/components/Hero.svelte';
   import ProjectCard from '$lib/components/ProjectCard.svelte';
+  import { base } from '$service-worker';
   import { onMount } from 'svelte';
   import { featuredProjects } from './projects';
 
