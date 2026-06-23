@@ -111,5 +111,29 @@ export const featuredProjects = [
       year: '2026',
       status: 'Completato',
       link: 'https://www.canva.com/design/DAHJ_1uIkpk/0zHLlBd9ruTcEIoRPeeWKw/view'
+    },
+    {
+      title: "Online dangers",
+      description: "How to avoid them and how to use the Internet safely",
+      tags: ['Inglese', 'Ed Civica'],
+      color: '#34d399',
+      year: '2026',
+      status: 'Completato',
+    },
+    {
+      title: "Advantages and disadvantages of AI",
+      description: "Advantages and disadvantages",
+      tags: ['Inglese', 'Ed Civica'],
+      color: '#34d399',
+      year: '2026',
+      status: 'Completato'
+    },
+    {
+      title: "Social problems of Internet",
+      description: "Ethiical problems of Internet.",
+      tags: ['Inglese', 'Ed Civica'],
+      color: '#34d399',
+      year: '2026',
+      status: 'Completato'
     }
 ];
