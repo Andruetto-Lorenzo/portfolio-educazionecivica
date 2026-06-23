@@ -124,7 +124,7 @@ export const featuredProjects = [
       title: "Advantages and disadvantages of AI",
       description: "Advantages and disadvantages",
       tags: ['Inglese', 'Ed Civica'],
-      color: '#34d399',
+      color: '#a855f7',
       year: '2026',
       status: 'Completato'
     },
@@ -132,7 +132,7 @@ export const featuredProjects = [
       title: "Social problems of Internet",
       description: "Ethiical problems of Internet.",
       tags: ['Inglese', 'Ed Civica'],
-      color: '#34d399',
+      color: '#a855f7',
       year: '2026',
       status: 'Completato'
     }
